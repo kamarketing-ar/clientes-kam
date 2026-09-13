@@ -1,0 +1,5 @@
+# Generado por scripts/deploy-git.mjs. Raíz de los paneles de clientes.
+# Sin listado de carpetas: /cli/ no muestra qué clientes hay.
+Options -Indexes
+# Nunca servir .git (el hosting clona el repo acá).
+RedirectMatch 404 /\.git

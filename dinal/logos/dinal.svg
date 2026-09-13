@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 176 40" role="img" aria-label="Dinal Propiedades">
+  <rect x="0" y="4" width="32" height="32" rx="8" fill="#253f6b"/>
+  <path d="M9 21.5 16 15l7 6.5V28h-4.5v-4.5h-5V28H9z" fill="#fff"/>
+  <text x="42" y="21" font-family="Geist, Segoe UI, Helvetica, Arial, sans-serif" font-size="17" font-weight="700" letter-spacing="1.5" fill="#1f2330">DINAL</text>
+  <text x="42.5" y="33" font-family="Geist, Segoe UI, Helvetica, Arial, sans-serif" font-size="8.5" font-weight="500" letter-spacing="2.6" fill="#6b7080">PROPIEDADES</text>
+</svg>
