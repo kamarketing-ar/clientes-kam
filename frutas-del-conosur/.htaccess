@@ -1,0 +1,9 @@
+# Hosting tradicional (Apache): todas las rutas de la SPA sirven index.html.
+Options -MultiViews
+RewriteEngine On
+RewriteBase /cli/frutas-del-conosur/
+# Nunca servir la carpeta .git
+RewriteRule (^|/)\.git(/|$) - [R=404,L]
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^ index.html [QSA,L]
