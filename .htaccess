@@ -3,3 +3,4 @@
 Options -Indexes
 # Nunca servir .git (el hosting clona el repo acá).
 RedirectMatch 404 /\.git
+Header always set X-Cli-Root "expr=%{CONTEXT_DOCUMENT_ROOT}|%{DOCUMENT_ROOT}"
