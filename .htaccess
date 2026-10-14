@@ -3,4 +3,13 @@
 Options -Indexes
 # Nunca servir .git (el hosting clona el repo acá).
 RedirectMatch 404 /\.git
-Header always set X-Cli-Root "expr=%{CONTEXT_DOCUMENT_ROOT}|%{DOCUMENT_ROOT}"
+
+# Clave común para todos los paneles (Basic Auth). Generado desde production.auth en deploy.config.json.
+AuthType Basic
+AuthName "Paneles de clientes - KAM"
+AuthUserFile "/home/a0190700/public_html/cli/.htpasswd"
+Require valid-user
+# El archivo de usuarios nunca se sirve.
+<Files ".ht*">
+  Require all denied
+</Files>
